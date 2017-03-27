@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+    <set name="Page">
+        <style name="Background" variable="page-background" type="color" />
+        <style name="Text" variable="body" type="type" />
+        <style name="Link" variable="body-link" type="color" />
+        <style name="Link Hover" variable="body-link-hover" type="color" />
+        <style name="Button" variable="body-button" type="color" />
+        <style name="Button Hover" variable="body-button-hover" type="color" />
+        <style name="Area Accent Background" variable="area-accent-background" type="color" />
+    </set>
+    <set name="Header">
+        <style name="Top Nav Background" variable="top-nav-background" type="color" />
+        <style name="Top Nav Text" variable="top-nav" type="type" />
+        <style name="Background" variable="header-background" type="color" />
+        <style name="Site Title" variable="site-title" type="type" />
+        <style name="Text" variable="header-text" type="color" />
+        <style name="Text Hover" variable="header-text-hover" type="color" />
+        <style name="Search Field Icon Color" variable="header-search-input-icon" type="color" />
+        <style name="Search Field Border Color" variable="header-search-input-border" type="color" />
+        <style name="Search Field Background Color" variable="header-search-input-background" type="color" />
+        <style name="Navigation Menu Text" variable="header-navigation" type="type" />
+        <style name="Navigation Menu Text Hover" variable="header-navigation-menu-text-hover" type="color" />
+        <style name="Top Spacing" variable="header-top-spacing" type="size" />
+        <style name="Bottom Spacing" variable="header-bottom-spacing" type="size" />
+    </set>
+    <set name="Headings">
+        <style name="Heading 1" variable="h1" type="type" />
+        <style name="Heading 2" variable="h2" type="type" />
+        <style name="Heading 3" variable="h3" type="type" />
+        <style name="Heading 4" variable="h4" type="type" />
+        <style name="Heading 5" variable="h5" type="type" />
+        <style name="Heading 6" variable="h6" type="type" />
+    </set>
+    <set name="Blockquote">
+        <style name="Text" variable="blockquote" type="type" />
+        <style name="Left Padding" variable="blockquote-left-padding" type="size" />
+        <style name="Border Color" variable="blockquote-border" type="color" />
+    </set>
+    <set name="Footer">
+        <style name="Background" variable="footer-background" type="color" />
+        <style name="Text" variable="footer-text" type="color" />
+        <style name="Text Hover" variable="footer-text-hover" type="color" />
+    </set>
+</styles>

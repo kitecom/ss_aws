@@ -1,0 +1,166 @@
+/* Import our theme variables. */
+@import "presets/defaults.less";
+
+/* Import our theme mixins*/
+@import "build/mixins.less"; 
+
+/* Import our theme fonts */
+@import "build/fonts.less}";
+
+/* PAGE */
+body {
+  font-family: @body-type-font-family, sans-serif;
+  font-size: @body-type-font-size;
+  color: @body-type-color;
+  font-weight: @body-type-font-weight;
+}
+#content {
+  background-color: @page-background-color;
+}
+a {
+  color: @body-link-color;
+}
+a:hover, a:focus {
+  color: @body-link-hover-color;
+}
+.btn,
+input[type=submit] {
+    background: @body-button-color;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active,
+.btn.active.focus, .btn.active:focus, .btn.active:hover, .btn:active.focus, .btn:active:focus, .btn:active:hover,
+input[type=submit]:hover,
+input[type=submit]:focus {
+    background: @body-button-hover-color;
+}
+.area-content-accent {
+    background-color: @area-accent-background-color;
+}
+
+/* HEADER */
+.top-nav {
+  background-color: @top-nav-background-color;
+  font-family: @top-nav-type-font-family, sans-serif;
+  font-size: @top-nav-type-font-size;
+  color: @top-nav-type-color;
+  font-weight: @top-nav-type-font-weight;
+}
+.top-nav a, .top-nav a:hover, .top-nav a:focus {
+  color: @top-nav-type-color;
+}
+.site-header, .navigation {
+  background-color: @header-background-color;
+  color: @header-text-color;
+}
+.primary-nav, .primary-nav a {
+  color: @header-text-color;
+  text-decoration: none;
+}
+.primary-nav a:hover, .primary-nav a:focus {
+  color: @header-text-hover-color;
+  text-decoration: none;
+}
+.site-name, .site-name h1, .site-name h2, .site-name h3, .site-name h4, .site-name h5, .site-name h6, .site-name a {
+  font-family: @site-title-type-font-family, sans-serif;
+  font-size: @site-title-type-font-size;
+  color: @site-title-type-color;
+  font-weight: @site-title-type-font-weight;
+}
+.site-name a:hover, .site-name a:focus {
+  color: @site-title-type-color;
+}
+.site-header .ccm-search-block-form:before {
+  color: @header-search-input-icon-color;
+}
+.site-header .ccm-search-block-form .ccm-search-block-text {
+  color: @header-search-input-icon-color;
+  background-color: @header-search-input-background-color;
+  border-color: @header-search-input-border-color;
+}
+
+/* MAIN MENU */
+.primary-nav .navbar .navbar-nav>li>a,
+.primary-nav .navbar .navbar-nav>.open>a {
+  font-family: @header-navigation-type-font-family, sans-serif;
+  font-size: @header-navigation-type-font-size;
+  color: @header-navigation-type-color;
+  font-weight: @header-navigation-type-font-weight;
+}
+.primary-nav .navbar .navbar-nav>li>a:focus,
+.primary-nav .navbar .navbar-nav>.open>a:focus,
+.primary-nav .navbar .navbar-nav>li>a:hover,
+.primary-nav .navbar .navbar-nav>.open>a:hover,
+.primary-nav .navbar .navbar-nav>.active>a,
+.primary-nav .navbar .navbar-nav>.active>a:focus,
+.primary-nav .navbar .navbar-nav>.active>a:hover {
+    color: @header-navigation-menu-text-hover-color;
+}
+
+/* HEADER SPACING */
+@media (min-width: 768px) {
+    .primary-nav .navbar {
+        margin-top: @header-top-spacing-size;
+        margin-bottom: @header-bottom-spacing-size;
+    }
+}
+
+/* HEADINGS */
+h1 {.make-heading(@h1-type-font-family, @h1-type-font-size, @h1-type-font-weight, @h1-type-color);}
+h2 {.make-heading(@h2-type-font-family, @h2-type-font-size, @h2-type-font-weight, @h2-type-color);}
+h3 {.make-heading(@h3-type-font-family, @h3-type-font-size, @h3-type-font-weight, @h3-type-color);}
+h4 {.make-heading(@h4-type-font-family, @h4-type-font-size, @h4-type-font-weight, @h4-type-color);}
+h5 {.make-heading(@h5-type-font-family, @h5-type-font-size, @h5-type-font-weight, @h5-type-color, @h5-type-text-transform);}
+h6 {.make-heading(@h6-type-font-family, @h6-type-font-size, @h6-type-font-weight, @h6-type-color, @h6-type-text-transform);}
+
+/* BLOCKQUOTE */
+blockquote {
+  padding-left: @blockquote-left-padding-size;
+  border-color: @blockquote-border-color;
+  font-size: @blockquote-type-font-size;
+  font-weight: @blockquote-type-font-weight;
+  color: @blockquote-type-color;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: @footer-background-color;
+  font-family: @footer-text-type-font-family, sans-serif;
+  font-size: @footer-text-type-font-size;
+  color: @footer-text-type-color;
+  font-weight: @footer-text-type-font-weight;
+}
+.site-footer p, .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
+  color: @footer-text-type-color;
+}
+.site-footer a {
+  color: @footer-text-type-color;
+}
+.site-footer a:hover, .site-footer a:focus {
+  color: @footer-text-hover-color;
+  text-decoration: none;
+}
+
+/* MISCELLANEOUS */
+.title-thin {
+  font-size: @h3-type-font-size;
+  font-weight: 200;
+  display: block;
+}
+.title-caps-bold {
+  font-family: @h3-type-font-family;
+  font-size: @h3-type-font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+}
+.title-caps {
+  font-family: @h3-type-font-family;
+  font-size: @h3-type-font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+}
