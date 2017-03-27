@@ -743,6 +743,9 @@ label {
 .page-footer-container {
     padding-top: 26px;
 }
+.dynamic-image-item {
+    margin: 10px;
+}
 
 /*--------------------------------------------------------------
 # Footer
