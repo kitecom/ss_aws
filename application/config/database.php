@@ -6,9 +6,9 @@ return [
         'concrete' => [
             'driver' => 'c5_pdo_mysql',
             'server' => 'localhost',
-            'database' => 'kite_ss_new',
+            'database' => 'ss_aws',
             'username' => 'root',
-            'password' => 'arsenal-71',
+            'password' => 'root',
             'charset' => 'utf8',
         ],
     ],
