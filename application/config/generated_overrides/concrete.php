@@ -22,6 +22,6 @@ return [
     ],
     'seo' => [
         'redirect_to_canonical_url' => 0,
-        'url_rewriting' => true,
+        'url_rewriting' => false,
     ],
 ];
