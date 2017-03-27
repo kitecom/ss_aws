@@ -28,7 +28,7 @@ if ($c->isEditMode()) { ?>
                         $height = $cropHeight;
                         $alt = null;
                         $crop = $crop;
-                        $image = $ih->outputThumbnail($f, $width, $height, $alt, true, $crop);
+                        $image = $ih->outputThumbnail($f, $width, $height, $alt, true, $crop );
                         echo '<div class="dynamic-image-item-image">' . $image . '</div>';
                     } else if ($cropImage == 0) {
                         $tag = Core::make('html/image', array($f, false))->getTag();
@@ -52,4 +52,32 @@ if ($c->isEditMode()) { ?>
         </div>
         <?php  } ?>
     </div>
+    <div tabindex="-1" class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal">×</button>
+        </div>
+        <div class="modal-body">
+            
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+       </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.img-responsive').click(function(){
+          $('.modal-body').empty();
+        var title = $(this).parent('a').attr("title");
+        $('.modal-title').html(title);
+        $($(this).parents('div').html()).appendTo('.modal-body');
+        $('#myModal').modal({show:true});
+    });
+});
+
+
+    </script>
 <?php  } ?>

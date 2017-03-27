@@ -743,6 +743,21 @@ label {
 .page-footer-container {
     padding-top: 26px;
 }
+.dynamic-image-item-image {
+    width: 200px;
+    height: 200px;
+}
+.dynamic-image-item-image img {
+    object-fit: cover; /* also try `contain` and `fill` */
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.modal-dialog{
+    width: 60vw;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
