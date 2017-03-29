@@ -126,14 +126,13 @@ div.ccm-image-slider-text {
     display: inline-block !important;
 }
 .site-content div[class^="col-sm"] .col-content {
-    background: #404041;
     margin: 0 1% 0;
     padding: 15px 15px;
     width: 100%;
     opacity: .95;
 }
 .site-content div[class^="col-sm"] .col-content * {
-    color: #fff
+    color: #fff;
 }
 @media (max-width: 480px) {
     .site-content div[class^="col-sm"] {
@@ -254,12 +253,6 @@ img {
 .navbar-nav> li.active {
     border-bottom: 6px solid #404041
 }
-
-area {
-   
-}
-
-
 
 /*--------------------------------------------------------------
 # Editor Classes
@@ -1111,3 +1104,9 @@ div.ccm-page div.blog-entry-list div.ccm-block-page-list-title, div.recent-blog-
 .top-nav .breadcrumb-trail strong {
     font-weight: 400;
 }
+.col-content{background: #404041;}
+.col-light-grey {background: #999;}
+.col-mid-grey {background: #666;}
+.col-dark-grey {background: #333;}
+.col-mid-green {background: #999966;}
+.col-light-green {background: #CCCC99;}
