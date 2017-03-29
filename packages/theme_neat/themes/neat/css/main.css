@@ -135,6 +135,35 @@ div.ccm-image-slider-text {
 .site-content div[class^="col-sm"] .col-content * {
     color: #fff
 }
+@media (max-width: 480px) {
+    .site-content div[class^="col-sm"] {
+        width: 100%!important;
+        margin-bottom: 20px;   
+    } 
+    .container .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    div.bg_stretch img {
+        height: 100%;
+    }
+    .navbar-nav> li,
+    .navbar-nav> li:hover, 
+    .navbar-nav> li.active {
+        border-bottom: 1px!important;
+        padding-left: 10px
+    }
+    .row.slider .col-sm-8,
+    .row.slider .col-sm-4 {
+        margin: 0 1% 0;
+        padding: 15px 15px;
+        width: 100%;
+    }
+}
+
+
+
+
 .site-content div[class^="col-sm"] .col-content a,
 select option,
 .panel table th,
@@ -195,6 +224,7 @@ img {
 .row.slider .col-sm-4 .col-content {
     display: flex;
     flex-direction: column;
+   
 }
 .row.slider .col-content img {
     object-fit: cover;
