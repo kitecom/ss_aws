@@ -4,6 +4,11 @@ $('div.col-content').filter(function() {
 
 //Add custom colours tp columns
 $('div').each(function(){
+    if($(this).hasClass('white')) {
+        $(this).parent('div').addClass("col-white");
+    } 
+});
+$('div').each(function(){
     if($(this).hasClass('light-grey')) {
         $(this).parent('div').addClass("col-light-grey");
     } 

@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------
 # Global
---------------------------------------------------------------*/
+--------------------------------------------------------------*/ 
 body {
     font-weight: 400;
     font-size: 16px;
@@ -169,7 +169,7 @@ select option,
 .panel table td,
 .panel p,
 .panel strong  {
-    color: #8c334d!important;
+    color: #B24B12 !important;
 }
 .panel table {
     margin: 10px 0
@@ -801,7 +801,7 @@ label {
     opacity: .85;
 }
 .site-footer a {
-    color: #8c334d;
+    color: #B24B12;
 }
 .site-footer .col-sm-3 {
     padding-top: 13px;
@@ -813,7 +813,7 @@ label {
     padding-top: 26px;
     padding-bottom: 26px;
     font-size: 14px;
-    color: #8c334d;
+    color: #B24B12;
 }
 .footer-1 {
 text-align: left}
@@ -1105,6 +1105,8 @@ div.ccm-page div.blog-entry-list div.ccm-block-page-list-title, div.recent-blog-
     font-weight: 400;
 }
 .col-content{background: #404041;}
+
+.col-content-white {background: #fff;}
 .col-light-grey {background: #999;}
 .col-mid-grey {background: #666;}
 .col-dark-grey {background: #333;}
